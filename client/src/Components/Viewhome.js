@@ -12,7 +12,7 @@ HOME OBJECT LAYOUT:
 
 
 import React from "react"
-
+import {Link} from "react-router-dom"
 import axios from "axios"
 
 class Viewhome extends React.Component{
@@ -50,7 +50,7 @@ class Viewhome extends React.Component{
                 {this.state.obj.description&&<div className="description">{this.state.obj.description}</div>}
                 <div class="placeholder-for-grid-so-image-extends-longer" style={{ height: "auto"}}></div>
             </div>
-            <a href="/homes" className="back-to-homes-button">Back To Homes</a>
+            <Link to="/homes" className="back-to-homes-button">Back To Homes</Link>
             <div style={{margin: "3vw"}}>{this.state.isAuthorized?<div>Home ID: {this.state.obj.id}</div>:<span></span>}</div>
             </div>
         )

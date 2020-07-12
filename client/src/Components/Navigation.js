@@ -1,5 +1,6 @@
 import React from "react"
 import {Navbar,Nav, NavDropdown,Form, FormControl, Button, Table} from "react-bootstrap"
+import {Link} from "react-router-dom"
 
 class Navigation extends React.Component{
     constructor(){
@@ -13,10 +14,10 @@ class Navigation extends React.Component{
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="fa fa-bars"id="toggler-button"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="nav ml-auto">
-                        <Nav.Link href="/homes" className="nav-item"style={{color: "white"}}>Homes</Nav.Link>
-                        <Nav.Link href="/places" className="nav-item"style={{color: "white"}}>Places</Nav.Link>
-                        <Nav.Link href="/agents" className="nav-item"style={{color: "white"}}>Agents</Nav.Link>
-                        <Nav.Link href="/admin" className="nav-item"style={{color: "white"}}>Admin</Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/homes">Homes</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/places">Places</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/agents">Agents</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/admin">Admin</Link> </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
