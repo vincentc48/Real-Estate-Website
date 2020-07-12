@@ -14,10 +14,10 @@ class Navigation extends React.Component{
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="fa fa-bars"id="toggler-button"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="nav ml-auto">
-                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/homes">Homes</Link> </Nav.Link>
-                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/places">Places</Link> </Nav.Link>
-                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/agents">Agents</Link> </Nav.Link>
-                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/admin">Admin</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/homes" style={{color: "white"}}>Homes</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/places" style={{color: "white"}}>Places</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/agents" style={{color: "white"}}>Agents</Link> </Nav.Link>
+                        <Nav.Link className="nav-item"style={{color: "white"}}><Link to="/admin" style={{color: "white"}}>Admin</Link> </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
